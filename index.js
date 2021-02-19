@@ -1,5 +1,4 @@
-// Nzc3NjE0ODU0MDk2ODE0MDkx.X7GARA.fsxcwb0gok9LqkTxAvvcAKJOw98
-// asfhiabwegweg
+
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
@@ -82,4 +81,4 @@ bot.on('message', (message) => {
 
 })
 
-bot.login("ODExMjYzMTMzMTIxMzgwNDAy.YCvpqw.X3cZHbjlvXRm6Cv9uON-ChMQulQ")
+bot.login("token")
