@@ -7,7 +7,7 @@ exports.run = async (bot,message,args) => {
         .setTitle('Moderation')
         .addField('**?kick**', 'Kicks a member from your server via mention or ID.')
         .addField('**?ban**', 'Bans a member from your server via mention or ID.')
-        .addField('**?unban**', 'unBans a member from your server via mention or ID.')
+        .addField('**?unban**', 'unBans a member from your server via ID.')
         .addField('**?purge**', 'Purges messages')
         .addField('**?mute**' , 'Mutes a user in the server.')
         .addField('**?unmute**' , 'unMutes a user in the server.')
