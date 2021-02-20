@@ -27,6 +27,7 @@ exports.run = async (bot,message,args) => {
         .setTitle('Utlity')
         .addField('**?ping**', 'Get the bot\'s API ping.')
         .addField('**?invite**', 'invite me to your server.')
+        .addField('**?slowmode**', 'Sets a slowmode to the channel.')
         .addField(`**?gw**` , "Starts a giveaway! - >  To Use `?gw <time(1m,1h,1d)> <#channel> <prize>")
         .setTimestamp()
 
