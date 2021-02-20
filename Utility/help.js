@@ -18,6 +18,8 @@ exports.run = async (bot,message,args) => {
         .setTitle('Fun')
         .addField('**?meme**', 'Generates a random meme.')
         .addField('**?say**' , 'Lets the bot say anything.')
+        .addField('**?gay**' , 'GayRate of a user in the server.')
+        .addField('**?simp**' , 'SimpRate of a user in the server.')
         .addField('**?avatar**' , 'Shows the avatar of  a user in the server.')
         .setTimestamp()
 
