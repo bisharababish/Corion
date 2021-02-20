@@ -1,6 +1,7 @@
 {
-    "token": "ODExMjYzMTMzMTIxMzgwNDAy.YCvpqw.X3cZHbjlvXRm6Cv9uON-ChMQulQ",
+    "token": "bot-token",
     "everyoneMention": false,
     "hostedBy": true,
-    "prefix": "?"
+    "prefix": "?",
+    "owneriD" : "ur dad"
 }
