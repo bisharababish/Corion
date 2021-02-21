@@ -1,21 +1,18 @@
-
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
-const client = require('discord.js')
 bot.commands = new Discord.Collection();
 
 bot.on('ready', () => {
-    console.log('Bot online')
+    console.log('Bot is now online')
 
     bot.user.setPresence({
         status: 'online',
         activity: {
             name: 'with depression',
-            type: 'PLAYING',
+            type: 'STREAMING',
         }
     })
-
 
 
 
@@ -82,4 +79,6 @@ bot.on('message', (message) => {
 })
 
 
-bot.login("ODExMjYzMTMzMTIxMzgwNDAy.YCvpqw.svZi51NSMFaf9oWX0OaL4vqwhtE")
+
+
+bot.login("ODExMjYzMTMzMTIxMzgwNDAy.YCvpqw.w-rUFPyIFCqxH-u2RBL-6sw7kJ0")

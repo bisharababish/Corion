@@ -1,7 +1,6 @@
 {
-    "token": "bot token",
+    "token": "",
     "everyoneMention": false,
     "hostedBy": true,
-    "prefix": "?",
-    "owneriD" : "ur id"
+    "prefix": "?"
 }
