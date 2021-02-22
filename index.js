@@ -9,11 +9,10 @@ bot.on('ready', () => {
     bot.user.setPresence({
         status: 'online',
         activity: {
-            name: 'with depression',
-            type: 'STREAMING',
+            name: '?help',
+            type: 'WATCHING',
         }
     })
-
 
 
     fs.readdir('./moderation', (err, files) => {
