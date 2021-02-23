@@ -1,8 +1,7 @@
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
-var rpc = require("discord-rpc")
-const client2 = new rpc.Client({ transport: 'ipc' })
+
 bot.commands = new Discord.Collection();
 
 bot.on('ready', () => {
@@ -16,20 +15,6 @@ bot.on('ready', () => {
         }
     })
 
-    client2.on('ready', () => {
-    client2.request('SET_ACTIVITY', {
-    pid: process.pid,
-    activity : {
-    details : "The Cozy Campfire",
-    assets : {
-    large_image : "idk",
-    large_text : "A COOL SERVER" // THIS WILL SHOW AS "Playing <Status>" from the outisde
-    },
-    buttons : [{label : "Corion" , url : "https://discord.com/api/oauth2/authorize?client_id=811263133121380402&permissions=8&scope=bot"},{label : "The Cozy Campfire",url : "https://discord.gg/R3RvyYM9sx"}]
-    }
-    })
-    })
-    client2.login({ clientId : "813448521457729536" }).catch(console.error);
 
 
     fs.readdir('./moderation', (err, files) => {
