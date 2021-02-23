@@ -1,6 +1,7 @@
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
+
 bot.commands = new Discord.Collection();
 
 bot.on('ready', () => {
@@ -75,9 +76,21 @@ bot.on('message', (message) => {
     let commandfile = bot.commands.get(cmd);
     if(commandfile) {commandfile.run(bot,message,args)}
 
+
+})
+const discord = require('discord.js')
+const client = new discord.Client();
+client.on("message" , message => {
+if(message.mentions.has("811263133121380402"))
+  return  message.channel.send("eee")
+
 })
 
+//if(message.author.bot) return false;
+//if(message.content.includes("@here") || message.content.includes("@everyone")) return false;
 
+//if(message.mentions.has(client.user.id)) {
+  //  message.channel.send("hi");
 
 
 bot.login("ODExMjYzMTMzMTIxMzgwNDAy.YCvpqw.b3jZuoYFN-aZE23A8pzdeYqQT4k");

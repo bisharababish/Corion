@@ -17,6 +17,8 @@ exports.run = async (bot,message,args) => {
         .addField('**?purge**', 'Purges messages')
         .addField('**?mute**' , 'Mutes a user in the server.')
         .addField('**?unmute**' , 'unMutes a user in the server.')
+        .addField('**?nick**' , 'Changes a user nickname in the server.')
+        .addField('**?resetnick**' , 'Resets a nickname of the user in the server.')
         .addField('**?nuke**' , 'Nukes a channel and recreates it.')
         .setFooter('Created By wearelivingart#1242')
 
