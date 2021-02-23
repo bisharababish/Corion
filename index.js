@@ -1,6 +1,7 @@
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
+var rpc = require("discord-rpc")
 const client2 = new rpc.Client({ transport: 'ipc' })
 bot.commands = new Discord.Collection();
 
