@@ -93,4 +93,4 @@ if(message.mentions.has("811263133121380402"))
   //  message.channel.send("hi");
 
 
-bot.login("ODExMjYzMTMzMTIxMzgwNDAy.YCvpqw.b3jZuoYFN-aZE23A8pzdeYqQT4k");
+bot.login(process.env.token);
