@@ -4,6 +4,7 @@
   "description": "a giveaway/moderation/fun bot! PS: i know i leaked my bot token but its invalid.",
   "main": "index.js",
   "dependencies": {
+    "discord-rpc": "git+https://github.com/djs/discord-rpc.git",
     "axios": "^0.21.1",
     "canvacord": "^5.0.8",
     "discord.js": "^12.5.1",
