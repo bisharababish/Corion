@@ -1,7 +1,7 @@
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
-const client = new rpc.Client({ transport: 'ipc' })
+const client2 = new rpc.Client({ transport: 'ipc' })
 bot.commands = new Discord.Collection();
 
 bot.on('ready', () => {
@@ -15,8 +15,8 @@ bot.on('ready', () => {
         }
     })
 
-    client.on('ready', () => {
-    client.request('SET_ACTIVITY', {
+    client2.on('ready', () => {
+    client2.request('SET_ACTIVITY', {
     pid: process.pid,
     activity : {
     details : "The Cozy Campfire",
@@ -28,7 +28,7 @@ bot.on('ready', () => {
     }
     })
     })
-    client.login({ clientId : "813448521457729536" }).catch(console.error);
+    client2.login({ clientId : "813448521457729536" }).catch(console.error);
 
 
     fs.readdir('./moderation', (err, files) => {
