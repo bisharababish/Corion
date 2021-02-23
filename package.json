@@ -1,7 +1,9 @@
 {
   "name": "bot",
   "version": "1.0.0",
-  "description": "a giveaway/moderation/fun bot! PS: i know i leaked my bot token but its invalid.",
+  "engines": {
+    "node": "14.x"},
+  "description": "idek tbh",
   "main": "index.js",
   "dependencies": {
     "discord-rpc": "git+https://github.com/djs/discord-rpc.git",
