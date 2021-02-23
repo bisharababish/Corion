@@ -6,7 +6,6 @@
   "description": "idek tbh",
   "main": "index.js",
   "dependencies": {
-    "discord-rpc": "git+https://github.com/djs/discord-rpc.git",
     "axios": "^0.21.1",
     "canvacord": "^5.0.8",
     "discord.js": "^12.5.1",
