@@ -19,33 +19,7 @@ bot.on('ready', () => {
     })
 
 
-    client.on('message2', (message) => {
-        const level = xp.getLevel(message, message.author.id)
-        const userxp = xp.getXP(message, message.author.id)
-        xp.giveXP(message);
-        if (message.content === "?level") message.channel.send(`You are on level ${level} and have ${userxp} XP`)
-        if (message.content === "?rank") message.channel.send(`You are on level ${level} and have ${userxp} XP`)
-        if (message.content === "?leaderboard") {
-            let lb = xp.leaderboard(message, message.guild.id, {limit: 10, raw: false});
-            const embed = new Discord.MessageEmbed()
-            .setTitle("Leaderboard")
-            .setColor("#FFFFFF")
-            lb.forEach(m => {
-                embed.addField(`${m.position}. ${client.users.cache.get(m.id).tag}, Level: ${xp.getLevel(message, m.id)}\n XP: ${m.xp}`)
-            })
-            message.channel.send(embed);
-        }
-        if (message.content === "?lb") {
-            let lb = xp.leaderboard(message, message.guild.id, {limit: 10, raw: false});
-            const embed = new Discord.MessageEmbed()
-            .setTitle("Leaderboard")
-            .setColor("#FFFFFF")
-            lb.forEach(m => {
-                embed.addField(`${m.position}. ${client.users.cache.get(m.id).tag}, Level: ${xp.getLevel(message, m.id)}\n XP: ${m.xp}`)
-            })
-            message.channel.send(embed);
-        }
-    })
+  
 
 })
     fs.readdir('./moderation', (err, files) => {
