@@ -19,7 +19,7 @@ bot.on('ready', () => {
             type: 'WATCHING',
         }
     })
-
+});
  
 
     fs.readdir('./moderation', (err, files) => {
