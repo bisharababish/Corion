@@ -1,10 +1,7 @@
 const Discord = require('discord.js') 
 const bot = new Discord.Client();
 const fs = require("fs")
-const XP = require('quick.xp');
-const xp = new XP.SQLiteManager({
-deleteMessage: false
-})
+
 bot.commands = new Discord.Collection();
 
 bot.on('ready', () => {
