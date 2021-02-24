@@ -1,9 +1,5 @@
 const Discord = require('discord.js') 
-const bot = new Discord.Client({
-    partials: ['MESSAGE', 'CHANNEL', 'REACTION']
-});
-const { loadCommands } = require('./utils/loadCommands');
-const DisTube = require('distube')
+const bot = new Discord.Client();
 
 const fs = require("fs")
 
