@@ -40,6 +40,7 @@ exports.run = async (bot,message,args) => {
         .addField('**?invite**', 'invite me to your server.')
         .addField('**?slowmode**', 'Sets a slowmode to the channel.')
         .addField('**?whois**' , 'Information of a user.')
+        .addField('**?emote**' , 'Steals emotes from any server.')
         .addField(`**?gw**` , "Starts a giveaway! - >  To Use `?gw <time(1m,1h,1d)> <#channel> <prize>")
         .setFooter('Created By wearelivingart#1242')
 

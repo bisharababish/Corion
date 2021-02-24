@@ -8,7 +8,7 @@ exports.run = async (bot,message,args) => {
     const name = args.slice(1).join(" ");
     if (!emoji) {
       return message.channel.send(
-        `Please Provide me an emoji lol`
+        `Please provide me an emoji lol`
       );
     }
 
