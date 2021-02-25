@@ -1,4 +1,5 @@
 exports.run = async (bot,message,args) => {
+    if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send("You don\'t have permission to run this command");
 
     const member = message.mentions.members.first();
     if(!member) return message.reply("Please specify a member!");
