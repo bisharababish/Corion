@@ -10,7 +10,7 @@ const {message,channel} = require('discord.js')
     } else {
     
         const ping = new Discord.MessageEmbed()
-        .addField("Out Cast", "Invite me from [here](https://discord.com/api/oauth2/authorize?client_id=811263133121380402&permissions=8&scope=bot)")
+        .addField("Out Cast", "Invite me from [here](https://discord.com/api/oauth2/authorize?client_id=811263133121380402&permissions=8&scope=bot")
         .setFooter('Created By wearelivingart#1242')
      
          message.channel.send(ping)
