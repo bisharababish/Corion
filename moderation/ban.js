@@ -1,5 +1,5 @@
 exports.run = async (bot,message,args) => {
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have permission to execute this command!")
+    if(!message.member.hasPermission("MANAGE_SERVER")) return message.channel.send("You do not have permission to execute this command!")
     let member = message.mentions.members.first() || message.guild.members.cache.get(args[0])
     if(!member) return message.channel.send("`?ban <member> <reason>`");
     if(member.roles.highest.position > message.member.roles.highest.position) return message.channel.send("You cannot ban someone with more power than you!")
