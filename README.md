@@ -1,2 +1,4 @@
 # Corion Bot
-I made this shit from my own creation lol,anyways it's moderation bot and whatever.
+A bot that does alot of commands in discord such as:
+Ban,Kick,Mute and etc...
+This was coded in JavaScript.
