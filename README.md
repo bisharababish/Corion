@@ -39,39 +39,9 @@ Corion is a Discord bot designed to handle administrative tasks in your server. 
 
 ## Setup
 
-1. Invite Corion to your server using [this link](#)
-2. Grant necessary permissions
-3. Configure Corion's settings with `/config`
-4. Set up admin roles with `/admin-roles`
-
-## Self-Hosting
-
-Requirements:
-- Node.js v16.9.0 or higher
-- Discord.js library
-- A MongoDB database (optional)
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/corion.git
-
-# Install dependencies
-cd corion
-npm install
-
-# Configure your .env file with your bot token
-# Start the bot
-npm start
-```
+Grant necessary permissions
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-[MIT License](LICENSE)
-
-## Support
-
-If you need help with Corion, join our [support server](#) or open an issue on GitHub.
